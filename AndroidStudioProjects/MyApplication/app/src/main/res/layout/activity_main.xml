@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/neuqbg1">
+
+    <!-- 使用AbsoluteLayout布局 -->
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <!-- 使用黑色字体提高对比，并添加白色阴影 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登陆界面"
+            android:textSize="42dp"
+            android:gravity="center"
+            android:layout_y="57dp"
+            android:textColor="#000000"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2" />
+    </AbsoluteLayout>
+
+    <!-- 账号输入行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号："
+            android:textSize="27dp"
+            android:textColor="#000000" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="请输入你的账号"
+            android:background="#66000000"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- 密码输入行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:textSize="27dp"
+            android:textColor="#000000" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="请输入你的密码"
+            android:background="#66000000"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- 性别选择 -->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:checked="true"
+            android:textColor="#000000" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:textColor="#000000" />
+    </RadioGroup>
+
+    <!-- 角色选择 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="教师"
+            android:textColor="#000000" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学生"
+            android:textColor="#000000" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="职工"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- 下拉框和注册按钮 -->
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="登    录"
+        android:textSize="31dp"
+        android:textColor="#FFFFFF"
+        android:background="@android:color/holo_blue_dark" />
+</LinearLayout>
